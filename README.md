@@ -14,43 +14,21 @@
  
 
 
-\begin{equation*}
-  y = W^T X + \epsilon
-\end{equation}        
+<p align="center"><img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/de06882459b39a41989eb4cfb3adad12.svg?invert_in_darkmode" align=middle width=100.40293725pt height=17.8466442pt/></p>
 <u>Where:</u><br>
 y is the target,<br>
-$w_0$ is the intercept (bias value)<br>
+<img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg?invert_in_darkmode" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
-  \begin{align*}
-    W &= \begin{bmatrix}
-           w_{0} \\
-           w_{1} \\
-           w_{2} \\
-           \vdots \\
-           w_{N}
-         \end{bmatrix}
- \end{align}
+
+<p align="center"><img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/e494bcd9ee6c4318551298c101e2fd8b.svg?invert_in_darkmode" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
+
+ 
 X is a matrix of 1's and K feature weights and N data points of <strong>given inputs</strong>
-  \begin{align*}
-    X &= \begin{bmatrix}
-1&x_{12}&\cdots &x_{1K} \\
-1&x_{22}&\cdots &x_{2K} \\
-\vdots & \vdots & \ddots & \vdots\\
-1&x_{N2}&\cdots &x_{NK}
-\end{bmatrix}
- \end{align}
+
+<p align="center"><img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg?invert_in_darkmode" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
  
- 
- and $\epsilon$ is a vector of estimation errors denoted
-  \begin{align*}
-    W &= \begin{bmatrix}
-           \epsilon_{1} \\
-           \epsilon_{2} \\
-           \vdots \\
-           \epsilon_{N}
-         \end{bmatrix}
- \end{align} 
- 
+ and <img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg?invert_in_darkmode" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
+ <p align="center"><img src="https://rawgit.com/DrIanGregory/MachineLearning-MultiLinearRegressionWithGradientDescent (fetch/master/svgs/8f0e92ede6c8f98716d5e718611b7c7b.svg?invert_in_darkmode" align=middle width=80.78418644999999pt height=88.76800184999999pt/></p>
 
 <h3>Expected Outputt</h3>
 <pre>
