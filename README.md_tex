@@ -67,9 +67,19 @@ $$
 </ul>
 
 $$
-		\begin{equation}\label{eq:MultipleLinearRegressionCostFunction}
-        	C(W) = \frac{1}{N} \sum^{N}_{n=1}(( W^T X_n)-y_n)^2
-        \end{equation} 
+	\begin{equation*}\label{eq:MultipleLinearRegressionCostFunction}
+		C(W) = \frac{1}{N} \sum^{N}_{n=1}(( W^T X_n)-y_n)^2
+	\end{equation} 
+$$
+
+<ul style="list-style-type:disc">
+	<li>With partial derivatives</li>
+</ul>
+$$
+\begin{align*}
+	\frac{\partial C}{\partial w_0} &= -\frac{2}{N} \sum_{n=1}^{N} ((W^T X_n ) - y_n) \\
+	\frac{\partial C}{\partial w_i} &= -\frac{2}{N} \sum_{n=1}^{N} x_i((W^T X_n - y_n)) 
+\end{align}
 $$
 
 <ul style="list-style-type:disc">
@@ -77,24 +87,16 @@ $$
 </ul>
 
 $$
-\begin{equation}
+\begin{equation*}
     w_n = w_n - \alpha \frac{\partial C}{\partial w_n}
 \end{equation}
- $$
- 
- <ul style="list-style-type:disc">
+$$
+
+<ul style="list-style-type:disc">
 	<li>Where $\alpha$ is the <em>"learning weight".</em>
- /ul>
+</ul>
+
  
- 
-<li>With partial derivatives $\eqref{eq:MultipleLinearRegressionCostFunction}$</li>
-$$
-\begin{align}
-	\frac{\partial C}{\partial w_0} &= -\frac{2}{N} \sum_{n=1}^{N} ((W^T X_n ) - y_n) \\
-	\frac{\partial C}{\partial w_i} &= -\frac{2}{N} \sum_{n=1}^{N} x_i((W^T X_n - y_n)) 
-\end{align}
-$$
-		
 		
 		
 <h3>Expected Outputt</h3>
