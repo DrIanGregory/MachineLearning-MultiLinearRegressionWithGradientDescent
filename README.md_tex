@@ -19,7 +19,7 @@ $$
 $$
 <u>Where:</u><br>
 y is the target,<br>
-$w_0$ is the intercept (bias value)<br>
+<p>$w_0$ is the intercept (bias value)<p><br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
 $$

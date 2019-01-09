@@ -17,7 +17,8 @@
 <p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg" align=middle width=100.40293725pt height=17.8466442pt/></p>
 <u>Where:</u><br>
 y is the target,<br>
-<img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<br>
+<p>
+<img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)</p><br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
 <p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg" align=middle width=85.88028735pt height=108.49422870000001pt/></p>

@@ -65,6 +65,27 @@ def gradientDescent(X, Y, W, alpha, maxNumIterations=10000):
 
 
 
+
+
+def showResults(X,Y,W,newW,costHistory,maxNumIterations,wHistory):
+    # Purpose: To display the results.
+
+    inital_cost = costFunction(X, Y, W);
+    Y_pred = X.dot(newW)
+
+    dash = '=' * 80;
+    print(dash)
+    print("MULTI LINEAR REGRESSION USING GRADIENT DESCENT TERMINATION RESULTS")
+    print(dash)
+    print("Initial Weights were:    {:>12.1f}, {:>2.1f}, {:>2.1f}.".format(W[0],W[1],W[2]))
+    print("   With initial cost:    {:>12,.1f}.".format(inital_cost))
+    print("        # Iterations:    {:>12,.0f}.    ".format(maxNumIterations))
+    print("       Final weights:    w0:{:>+0.2f}, w1:{:>+3.2f}, w2:{:>+3.3f}.".format(newW[0], newW[1], newW[2]))
+    print("          Final cost:    {:>+12.1f}.".format(costHistory[-1]))
+    print("                RMSE:    {:>+12.1f}, R-Squared: {:>+12.1f}".format(rmse(Y, Y_pred),r2Score(Y, Y_pred)))
+    print(dash)
+
+
 def programBody(data,alpha,maxNumIterations):
     # Purpose: To perform the calculation and show the results.
 
@@ -82,27 +103,6 @@ def programBody(data,alpha,maxNumIterations):
     showResults(X, Y, W, newW, costHistory, maxNumIterations,wHistory);
 
     return
-
-
-def showResults(X,Y,W,newW,costHistory,maxNumIterations,wHistory):
-    # Purpose: To display the results.
-
-    inital_cost = costFunction(X, Y, W);
-    Y_pred = X.dot(newW)
-
-    dash = '=' * 80;
-    print(dash)
-    print("MULTI LINEAR REGRESSION USING GRADIENT DESCENT TERMINATION RESULTS")
-    print(dash)
-    print("Initial Weights were:    {:>12.1f}, {:>2.1f}, {:>2.1f}.".format(W[0],W[1],W[2]))
-    print("   With initial cost:    {:>12.1f}.".format(inital_cost))
-    print("        # Iterations:    {:>12,.0f}.    ".format(maxNumIterations))
-    print("       Final weights:    w0:{:>+0.2f}, w1:{:>+3.2f}, w2:{:>+3.3f}.".format(newW[0], newW[1], newW[2]))
-    print("          Final cost:    {:>+12.1f}.".format(costHistory[-1]))
-    print("                RMSE:    {:>+12.1f}, R-Squared: {:>+12.1f}".format(rmse(Y, Y_pred),r2Score(Y, Y_pred)))
-    print(dash)
-
-
 
 
 def run():
