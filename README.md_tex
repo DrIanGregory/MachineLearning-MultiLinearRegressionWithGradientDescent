@@ -51,7 +51,7 @@ $$
  and $\epsilon$ is a vector of estimation errors denoted
  $$
   \begin{align*}
-    W &= \begin{bmatrix}
+    \epsilon &= \begin{bmatrix}
            \epsilon_{1} \\
            \epsilon_{2} \\
            \vdots \\
@@ -60,7 +60,7 @@ $$
  \end{align} 
  $$
 
- 
+
  
 <ul style="list-style-type:disc">
 	<li>The loss function chosen is <strong>minimum mean square error</strong> given by:</li>
@@ -97,9 +97,13 @@ $$
 </ul>
 
  
+<h3>How to use</h3>
+<pre>
+python mulitpleLinearRegression.py
+</pre>
 		
 		
-<h3>Expected Outputt</h3>
+<h3>Expected Output</h3>
 <pre>
 =======================================================================
 MULTI LINEAR REGRESSION USING GRADIENT DESCENT TERMINATION RESULTS
@@ -113,3 +117,8 @@ Initial Weights were:             0.0, 0.0, 0.0.
 =======================================================================
 Finished
 </pre>
+
+<h3>Requirements</h3>
+ <p><a href="https://www.python.org/">Python (>2.7)</a>, <a href="http://www.numpy.org/">Numpy</a> and <a href="https://pandas.pydata.org/">Pandas</a>.</p>
+ 
+ 

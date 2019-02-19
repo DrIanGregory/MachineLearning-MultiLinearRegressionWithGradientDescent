@@ -17,8 +17,7 @@
 <p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg" align=middle width=100.40293725pt height=17.8466442pt/></p>
 <u>Where:</u><br>
 y is the target,<br>
-<p>
-<img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)</p><br>
+<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p><br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
 <p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
@@ -29,9 +28,9 @@ X is a matrix of 1's and K feature weights and N data points of <strong>given in
 <p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
  
  and <img src="svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
- <p align="center"><img src="svgs/8f0e92ede6c8f98716d5e718611b7c7b.svg" align=middle width=80.78418644999999pt height=88.76800184999999pt/></p>
+ <p align="center"><img src="svgs/9720c5e6a6e5e815ac04a66c9acc4fc6.svg" align=middle width=69.6483381pt height=88.76800184999999pt/></p>
 
- 
+
  
 <ul style="list-style-type:disc">
 	<li>The loss function chosen is <strong>minimum mean square error</strong> given by:</li>
@@ -55,9 +54,13 @@ X is a matrix of 1's and K feature weights and N data points of <strong>given in
 </ul>
 
  
+<h3>How to use</h3>
+<pre>
+python mulitpleLinearRegression.py
+</pre>
 		
 		
-<h3>Expected Outputt</h3>
+<h3>Expected Output</h3>
 <pre>
 =======================================================================
 MULTI LINEAR REGRESSION USING GRADIENT DESCENT TERMINATION RESULTS
@@ -71,3 +74,8 @@ Initial Weights were:             0.0, 0.0, 0.0.
 =======================================================================
 Finished
 </pre>
+
+<h3>Requirements</h3>
+ <p><a href="https://www.python.org/">Python (>2.7)</a>, <a href="http://www.numpy.org/">Numpy</a> and <a href="https://pandas.pydata.org/">Pandas</a>.</p>
+ 
+ 
