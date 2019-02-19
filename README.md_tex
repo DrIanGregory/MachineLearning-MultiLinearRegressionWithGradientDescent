@@ -7,8 +7,8 @@
 </ul>
 
 <p float="left">
-  <img src="/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
-  <img src="/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
+  <img src="images/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
+  <img src="images/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
 </p>
 
  
