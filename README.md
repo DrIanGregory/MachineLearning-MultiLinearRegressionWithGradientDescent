@@ -13,25 +13,25 @@
 
  
 
-<img src="svgs/3b130d075d75c0871654e20f2932e1a0.svg?" align=middle width=100.40293724999998pt height=27.6567522pt/>
-<img src="svgs/15b9e78f3a7cb11ea59b95c9553fb928.svg?" align=middle width=119.34141284999998pt height=26.76175259999998pt/>, then <img src="svgs/2b1f70f6a49aea806b0a5f021e843447.svg?" align=middle width=112.44128444999998pt height=33.20539200000001pt/>.
+<img src="svgs/3b130d075d75c0871654e20f2932e1a0.svg?invert_in_darkmode" align=middle width=100.40293724999998pt height=27.6567522pt/>
+<img src="svgs/15b9e78f3a7cb11ea59b95c9553fb928.svg?invert_in_darkmode" align=middle width=119.34141284999998pt height=26.76175259999998pt/>, then <img src="svgs/2b1f70f6a49aea806b0a5f021e843447.svg?invert_in_darkmode" align=middle width=112.44128444999998pt height=33.20539200000001pt/>.
 
 
-<p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg?" align=middle width=100.40293725pt height=17.8466442pt/></p>
+<p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg?invert_in_darkmode" align=middle width=100.40293725pt height=17.8466442pt/></p>
 <u>Where:</u><br>
 y is the target,<br>
-<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg?" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p><br>
+<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg?invert_in_darkmode" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p><br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
-<p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg?" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
+<p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg?invert_in_darkmode" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
 
  
 X is a matrix of 1's and K feature weights and N data points of <strong>given inputs</strong>
 
-<p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg?" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
+<p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg?invert_in_darkmode" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
  
- and <img src="svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg?" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
- <p align="center"><img src="svgs/9720c5e6a6e5e815ac04a66c9acc4fc6.svg?" align=middle width=69.6483381pt height=88.76800184999999pt/></p>
+ and <img src="svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg?invert_in_darkmode" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
+ <p align="center"><img src="svgs/9720c5e6a6e5e815ac04a66c9acc4fc6.svg?invert_in_darkmode" align=middle width=69.6483381pt height=88.76800184999999pt/></p>
 
 
  
@@ -39,21 +39,21 @@ X is a matrix of 1's and K feature weights and N data points of <strong>given in
 	<li>The loss function chosen is <strong>minimum mean square error</strong> given by:</li>
 </ul>
 
-<p align="center"><img src="svgs/7fdf46eb804213abbe366918f7fb3ce7.svg?" align=middle width=231.84320774999998pt height=47.60747145pt/></p>
+<p align="center"><img src="svgs/7fdf46eb804213abbe366918f7fb3ce7.svg?invert_in_darkmode" align=middle width=231.84320774999998pt height=47.60747145pt/></p>
 
 <ul style="list-style-type:disc">
 	<li>With partial derivatives</li>
 </ul>
-<p align="center"><img src="svgs/7e7d6721153a3f931a9c93332de39e07.svg?" align=middle width=242.92115924999996pt height=105.07795814999999pt/></p>
+<p align="center"><img src="svgs/7e7d6721153a3f931a9c93332de39e07.svg?invert_in_darkmode" align=middle width=242.92115924999996pt height=105.07795814999999pt/></p>
 
 <ul style="list-style-type:disc">
  <li>With weight updates given by:</li>
 </ul>
 
-<p align="center"><img src="svgs/7d5659f6aef43ad887de68ba61e98142.svg?" align=middle width=126.34763954999998pt height=36.2778141pt/></p>
+<p align="center"><img src="svgs/7d5659f6aef43ad887de68ba61e98142.svg?invert_in_darkmode" align=middle width=126.34763954999998pt height=36.2778141pt/></p>
 
 <ul style="list-style-type:disc">
-	<li>Where <img src="svgs/c745b9b57c145ec5577b82542b2df546.svg?" align=middle width=10.57650494999999pt height=14.15524440000002pt/> is the <em>"learning weight".</em>
+	<li>Where <img src="svgs/c745b9b57c145ec5577b82542b2df546.svg?invert_in_darkmode" align=middle width=10.57650494999999pt height=14.15524440000002pt/> is the <em>"learning weight".</em>
 </ul>
 
  
