@@ -18,12 +18,12 @@ y is the target,<br>
 <p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p><br>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
-<p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg?invert_in_darkmode" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
+<p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
 
  
 X is a matrix of 1's and K feature weights and N data points of <strong>given inputs</strong>
 
-<p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg?invert_in_darkmode" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
+<p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg?invert_in_darkmode" fill="white" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
  
  and <img src="svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg?invert_in_darkmode" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
  <p align="center"><img src="svgs/9720c5e6a6e5e815ac04a66c9acc4fc6.svg?invert_in_darkmode" align=middle width=69.6483381pt height=88.76800184999999pt/></p>
