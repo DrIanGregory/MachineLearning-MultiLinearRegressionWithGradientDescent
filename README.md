@@ -11,17 +11,12 @@
   <img src="images/linearRegressionFit.gif"  width="45%" alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
 </p>
 
- 
-
-<img src="svgs/3b130d075d75c0871654e20f2932e1a0.svg" align=middle width=100.40293724999998pt height=27.6567522pt/>
-<img src="svgs/15b9e78f3a7cb11ea59b95c9553fb928.svg" align=middle width=119.34141284999998pt height=26.76175259999998pt/>, then <img src="svgs/2b1f70f6a49aea806b0a5f021e843447.svg" align=middle width=112.44128444999998pt height=33.20539200000001pt/>.
-
 
 <p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg" align=middle width=100.40293725pt height=17.8466442pt/></p>
 <u>Where:</u><br>
 y is the target,<br>
-<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p><br>
-W is a vector parameters (weights) <strong>to be estimated</strong>.
+<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p>
+W is a vector of parameter (weights) <strong>to be estimated</strong>.
 
 <p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
 
