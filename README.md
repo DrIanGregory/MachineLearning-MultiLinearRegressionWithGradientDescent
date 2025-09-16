@@ -7,26 +7,62 @@
 </ul>
 
 <p float="left">
-  <img src="images/linearRegressionCost.gif"  width="45%"  alt="Cost of algorithm improvement through epochs."/>
-  <img src="images/linearRegressionFit.gif"  width="45%" alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
+  <img src="images/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
+  <img src="images/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
 </p>
 
+ 
 
-<p align="center"><img src="svgs/de06882459b39a41989eb4cfb3adad12.svg" align=middle width=100.40293725pt height=17.8466442pt/></p>
+$y = W^T X + \epsilon$
+$ax^2 + bx + c = 0$, then $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+
+
+$$
+  y = W^T X + \epsilon
+$$
+
 <u>Where:</u><br>
 y is the target,<br>
-<p><img src="svgs/08a0aa2c6ce40306bad8bab7f60a9523.svg" align=middle width=18.32105549999999pt height=14.15524440000002pt/> is the intercept (bias value)<p>
-W is a vector of parameter (weights) <strong>to be estimated</strong>.
+<p>$w_0$ is the intercept (bias value)<p><br>
+W is a vector parameters (weights) <strong>to be estimated</strong>.
 
-<p align="center"><img src="svgs/e494bcd9ee6c4318551298c101e2fd8b.svg" align=middle width=85.88028735pt height=108.49422870000001pt/></p>
+$$
+  \begin{align*}
+    W &= \begin{bmatrix}
+           w_{0} \\
+           w_{1} \\
+           w_{2} \\
+           \vdots \\
+           w_{N}
+         \end{bmatrix}
+ \end{align}
+$$
 
  
 X is a matrix of 1's and K feature weights and N data points of <strong>given inputs</strong>
 
-<p align="center"><img src="svgs/7c0a4d8bcc24c33ddb67f85bf718d175.svg" align=middle width=200.3263218pt height=88.76800184999999pt/></p> 
+$$
+  \begin{align*}
+    X &= \begin{bmatrix}
+1&x_{12}&\cdots &x_{1K} \\
+1&x_{22}&\cdots &x_{2K} \\
+\vdots & \vdots & \ddots & \vdots\\
+1&x_{N2}&\cdots &x_{NK}
+\end{bmatrix}
+ \end{align}
+$$ 
  
- and <img src="svgs/7ccca27b5ccc533a2dd72dc6fa28ed84.svg" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is a vector of estimation errors denoted
- <p align="center"><img src="svgs/9720c5e6a6e5e815ac04a66c9acc4fc6.svg" align=middle width=69.6483381pt height=88.76800184999999pt/></p>
+ and $\epsilon$ is a vector of estimation errors denoted
+ $$
+  \begin{align*}
+    \epsilon &= \begin{bmatrix}
+           \epsilon_{1} \\
+           \epsilon_{2} \\
+           \vdots \\
+           \epsilon_{N}
+         \end{bmatrix}
+ \end{align} 
+ $$
 
 
  
@@ -34,28 +70,41 @@ X is a matrix of 1's and K feature weights and N data points of <strong>given in
 	<li>The loss function chosen is <strong>minimum mean square error</strong> given by:</li>
 </ul>
 
-<p align="center"><img src="svgs/7fdf46eb804213abbe366918f7fb3ce7.svg" align=middle width=231.84320774999998pt height=47.60747145pt/></p>
+$$
+	\begin{equation*}\label{eq:MultipleLinearRegressionCostFunction}
+		C(W) = \frac{1}{N} \sum^{N}_{n=1}(( W^T X_n)-y_n)^2
+	\end{equation} 
+$$
 
 <ul style="list-style-type:disc">
 	<li>With partial derivatives</li>
 </ul>
-<p align="center"><img src="svgs/7e7d6721153a3f931a9c93332de39e07.svg" align=middle width=242.92115924999996pt height=105.07795814999999pt/></p>
+$$
+\begin{align*}
+	\frac{\partial C}{\partial w_0} &= -\frac{2}{N} \sum_{n=1}^{N} ((W^T X_n ) - y_n) \\
+	\frac{\partial C}{\partial w_i} &= -\frac{2}{N} \sum_{n=1}^{N} x_i((W^T X_n - y_n)) 
+\end{align}
+$$
 
 <ul style="list-style-type:disc">
  <li>With weight updates given by:</li>
 </ul>
 
-<p align="center"><img src="svgs/7d5659f6aef43ad887de68ba61e98142.svg" align=middle width=126.34763954999998pt height=36.2778141pt/></p>
+$$
+\begin{equation*}
+    w_n = w_n - \alpha \frac{\partial C}{\partial w_n}
+\end{equation}
+$$
 
 <ul style="list-style-type:disc">
-	<li>Where <img src="svgs/c745b9b57c145ec5577b82542b2df546.svg" align=middle width=10.57650494999999pt height=14.15524440000002pt/> is the <em>"learning weight".</em>
+	<li>Where $\alpha$ is the <em>"learning weight".</em>
 </ul>
 
  
 <h3>How to use</h3>
-
-##
-	python mulitpleLinearRegression.py
+<pre>
+python mulitpleLinearRegression.py
+</pre>
 		
 		
 <h3>Expected Output</h3>
