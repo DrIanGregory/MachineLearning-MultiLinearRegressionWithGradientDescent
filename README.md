@@ -6,15 +6,17 @@
 <li>Using simulated data of job prospects given AI and machine learning skills.</li>
 </ul>
 
-<p float="left">
-  <img src="images/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
-  <img src="images/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
-</p>
 
- 
-
-$y = W^T X + \epsilon$
-$ax^2 + bx + c = 0$, then $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+<table style="max-width:100%;white-space:nowrap;">
+	<tr>	
+		<th>	    
+			<img src="images/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
+		</th>
+		<th>	    
+			<img src="images/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
+		</th>
+	</tr>
+</table>
 
 
 $$
@@ -23,7 +25,7 @@ $$
 
 <u>Where:</u><br>
 y is the target,<br>
-<p>$w_0$ is the intercept (bias value)<p><br>
+<p>$w_0$ is the intercept (bias value)<p>
 W is a vector parameters (weights) <strong>to be estimated</strong>.
 
 $$
@@ -35,7 +37,7 @@ $$
            \vdots \\
            w_{N}
          \end{bmatrix}
- \end{align}
+ \end{align*}
 $$
 
  
@@ -49,7 +51,7 @@ $$
 \vdots & \vdots & \ddots & \vdots\\
 1&x_{N2}&\cdots &x_{NK}
 \end{bmatrix}
- \end{align}
+ \end{align*}
 $$ 
  
  and $\epsilon$ is a vector of estimation errors denoted
@@ -61,7 +63,7 @@ $$
            \vdots \\
            \epsilon_{N}
          \end{bmatrix}
- \end{align} 
+ \end{align*} 
  $$
 
 
@@ -83,7 +85,7 @@ $$
 \begin{align*}
 	\frac{\partial C}{\partial w_0} &= -\frac{2}{N} \sum_{n=1}^{N} ((W^T X_n ) - y_n) \\
 	\frac{\partial C}{\partial w_i} &= -\frac{2}{N} \sum_{n=1}^{N} x_i((W^T X_n - y_n)) 
-\end{align}
+\end{align*}
 $$
 
 <ul style="list-style-type:disc">
@@ -93,7 +95,7 @@ $$
 $$
 \begin{equation*}
     w_n = w_n - \alpha \frac{\partial C}{\partial w_n}
-\end{equation}
+\end{equation*}
 $$
 
 <ul style="list-style-type:disc">
