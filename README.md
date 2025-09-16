@@ -10,14 +10,15 @@
 <table style="max-width:100%;white-space:nowrap;">
 	<tr>	
 		<th>	    
-			<img src="images/linearRegressionCost.gif" width="400" alt="Cost of algorithm improvement through epochs."/>
+			<img src="images/linearRegressionCost.gif" maxwidth="400" alt="Cost of algorithm improvement through epochs."/>
 		</th>
 		<th>	    
-			<img src="images/linearRegressionFit.gif" width="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
+			<img src="images/linearRegressionFit.gif" maxwidth="460"alt="Shape of the hyperplane as cost from algorithm improves through epochs."/>
 		</th>
 	</tr>
 </table>
 
+Given,
 
 $$
   y = W^T X + \epsilon
@@ -82,6 +83,7 @@ $$
 <ul style="list-style-type:disc">
 	<li>With partial derivatives</li>
 </ul>
+
 $$
 \begin{align*}
 	\frac{\partial C}{\partial w_0} &= -\frac{2}{N} \sum_{n=1}^{N} ((W^T X_n ) - y_n) \\
@@ -95,7 +97,7 @@ $$
 
 $$
 \begin{equation*}
-    w_n = w_n - \alpha \frac{\partial C}{\partial w_n}
+    w_{n} = w_{n-1} - \alpha \frac{\partial C}{\partial w_{n-1}}
 \end{equation*}
 $$
 
