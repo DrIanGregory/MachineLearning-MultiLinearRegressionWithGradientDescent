@@ -55,7 +55,8 @@ $$
 $$ 
  
  and $\epsilon$ is a vector of estimation errors denoted
- $$
+ 
+$$
   \begin{align*}
     \epsilon &= \begin{bmatrix}
            \epsilon_{1} \\
@@ -64,7 +65,7 @@ $$
            \epsilon_{N}
          \end{bmatrix}
  \end{align*} 
- $$
+$$
 
 
  
@@ -75,7 +76,7 @@ $$
 $$
 	\begin{equation*}\label{eq:MultipleLinearRegressionCostFunction}
 		C(W) = \frac{1}{N} \sum^{N}_{n=1}(( W^T X_n)-y_n)^2
-	\end{equation} 
+	\end{equation*} 
 $$
 
 <ul style="list-style-type:disc">
